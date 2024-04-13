@@ -24,10 +24,14 @@ class Titular(Person):
     def key(self, key):
         self.__key
 
+
+
     def create_person(self, product):
         super().create_person()
-        self.__product = product.product_name
+        value = int((input("Seleccione 1. Ahorro 2. Credito")))
+        self.__product = product.products[value]
         self.__key = int(input("Key"))
+        self.users[self._id] = self.name, self.last_name, self.mail, self.phone, self.key,self.product
 
     def __str__(self, product):
         print= f"""
@@ -37,3 +41,7 @@ class Titular(Person):
 
         """
         return print
+
+    def select_user(self):
+        for i in self.users.items():
+            print(i)

@@ -15,8 +15,12 @@ class Test:
 
 
 
-
+    product.create_product()
+    product.create_product()
+    product.select_product()
     titular.create_person(product)
-    print(titular.__str__(product))
-    account.create_account(titular)
-    print(account.__str__(titular))
+    titular.create_person(product)
+    #print(titular.__str__(product))
+    #account.create_account(titular)
+    #print(account.__str__(titular))
+    titular.select_user()

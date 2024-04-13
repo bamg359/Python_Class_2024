@@ -10,6 +10,9 @@ class Person:
         self._mail = mail
         self._phone = phone
 
+    users = {}
+
+    #Getter and Setter
     @property
     def id(self):
         return self._id
@@ -59,6 +62,7 @@ class Person:
         self._last_name = input("LastName: ")
         self._mail = input("Mail: ")
         self._phone = input("Phone: ")
+
 
 
 
