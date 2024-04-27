@@ -64,9 +64,6 @@ class Person:
         self._phone = input("Phone: ")
 
 
-
-
-
     def __str__(self):
         print = f"""
         id: {self._id},

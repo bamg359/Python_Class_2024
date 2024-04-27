@@ -25,9 +25,6 @@ class Product:
 
     products = {}
 
-
-
-
     def create_product(self):
         self.__id_product = int(input("Product Id: "))
         self.__product_name = input("Product Name: ")
